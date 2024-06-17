@@ -1,0 +1,16 @@
+
+    <html lang="fr">
+        <head>
+            <meta charset="utf-8">
+            <title>Accueil</title>
+            <link rel="stylesheet" href="./style/style.css">
+        </head>
+        <body>
+            <?php
+                require_once './navbar.php';
+                require_once './footer.php';
+            ?>
+            <h1 class="productstock">ProductStock</h1>
+            
+        </body>
+    </html>
