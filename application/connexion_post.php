@@ -1,7 +1,9 @@
 <?php
-    $user = false;
-    if(isset($_POST['username']) && isset($_POST['password'])) {
-        $user = true;
+    if(isset($_POST['username']) && $_POST['username'] === 'admin' && isset($_POST['password']) && $_POST['password'] === 'admin') {
+        header('Location: index.php');
+        exit();
+    } else {
+        header('Location: connexion.php');
+        exit();
     }
-    exit();
 ?>

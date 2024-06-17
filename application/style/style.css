@@ -55,6 +55,10 @@ nav ul li a:hover {
     background-color: var(--main-hover);
 }
 
+.deconnexion {
+    color: var(--text-color);
+}
+
 /* FOERMULAIRE DE CONNEXION  */
 form {
     background: linear-gradient(190deg, var(--main-color), rgb(163, 163, 163));

@@ -3,12 +3,11 @@
             <meta charset="utf-8">
             <title>Connexion</title>
             <link rel="stylesheet" href="./style/style.css">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.39.2/css-doodle.min.js"></script>
         </head>
         <body>
-            <?php
+            <!-- <?php
                 require_once './navbar.php';
-            ?>
+            ?> -->
             <h1 class="productstock">ProductStock</h1>
             <div class="connexion-form-page">
             <h1>Connexion</h1>
