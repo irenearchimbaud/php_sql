@@ -13,10 +13,8 @@
             <div class="connexion-form-page">
             <h1>Inscription</h1>
                 <form action="inscription_post.php" method="POST">
-                    <label for="lastName">Nom:</label>
-                    <input type="text" id="lastName" name="lastName" />
-                    <label for="firstName">Prénom:</label>
-                    <input type="text" id="firstName" name="firstName" />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" />
                     <label for="username">Identifiant:</label>
                     <input type="text" id="username" name="username" />
                     <label for="password">Mot de passe:</label>
