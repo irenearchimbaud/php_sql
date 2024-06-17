@@ -1,7 +1,7 @@
 <nav>
     <ul>
-        <li><a href="">Dashboard</a></li>
-        <li><a href="">Stock</a></li>
-        <li><a href="">À Propos</a></li>
+        <li><a href="">ACCUEIL</a></li>
+        <li><a href="">STOCK</a></li>
+        <li><a href="">A PROPOS</a></li>
     </ul>
 </nav>

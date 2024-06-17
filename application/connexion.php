@@ -1,16 +1,26 @@
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Connexion</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-    <?php
-        require_once './navbar.php';
-    ?>
-    
-</body>
-</html>
+        <head>
+            <meta charset="utf-8">
+            <title>Connexion</title>
+            <link rel="stylesheet" href="./style/style.css">
+        </head>
+        <body>
+            <?php
+                require_once './navbar.php';
+            ?>
+            <div class="connexion-form-page">
+                <form action="connexion_post.php" method="POST">
+                    <label for="username">Identifiant:</label>
+                    <input type="text" id="username" name="username" />
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" />
+                    <div class="form-button-div">
+                        <input type="submit" value="Se connecter" />
+                    </div>
+                </form>
+            </div>
+            <?php
+                require_once './footer.php';
+            ?>
+        </body>
+    </html>

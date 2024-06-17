@@ -1,0 +1,125 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --main-color: #2e2e2e;
+    --text-color: white;
+    --main-hover: #575757;
+    --main-color-opacity: rgba(46,46,46, 0.8);
+}
+
+/* NAVBAR */
+nav {
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--main-hover);
+}
+
+/* FOERMULAIRE DE CONNEXION  */
+form {
+    background-color: var(--main-color-opacity);
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border: 2px solid var(--main-hover);
+}
+
+input[type="submit"] {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 60%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:active {
+    background-color: var(--main-hover);
+}
+
+.form-button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.connexion-form-page {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* FOOTER  */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 5 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--main-hover);
+}
