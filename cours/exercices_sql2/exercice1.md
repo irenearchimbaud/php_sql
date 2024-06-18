@@ -14,8 +14,8 @@ CREATE TABLE stagiaire (
 3/
 INSERT INTO stagiaire (nom, prenom, date_naissance, email)
 VALUES 
-('Glory', 'Tania', 06/03/2002, 'glorytania@gmail.com'),
-('Jones', 'Davis', 07/08/2000, 'davisjones@gmail.com'),
-('Arterchery', 'Milla', 30/01/2002, 'milla.art@gmail.com'),
-('Ghillem', 'Jhon', 05/05/2003, 'jhon.ghillem@gmail.com'),
-('Depardieu', 'Thomas', 22/07/2001, 'depardieuthomas@gmail.com')
+('Glory', 'Tania', 2003-03-21, 'glorytania@gmail.com'),
+('Jones', 'Davis', 2000-05-30, 'davisjones@gmail.com'),
+('Arterchery', 'Milla', 2000-12-14, 'milla.art@gmail.com'),
+('Ghillem', 'Jhon', 2001-09-27, 'jhon.ghillem@gmail.com'),
+('Depardieu', 'Thomas', 2002-05-05, 'depardieuthomas@gmail.com')
