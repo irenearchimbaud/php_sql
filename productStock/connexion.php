@@ -7,6 +7,7 @@
         <body>
             <!-- <?php
                 require_once './navbar.php';
+                include './env.php';
             ?> -->
             <h1 class="productstock">ProductStock</h1>
             <div class="connexion-form-page">

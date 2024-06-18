@@ -1,4 +1,4 @@
-<?php include './products/Product.php' ?>
+<!-- <?php include './products/Product.php' ?> -->
 <html lang="fr">
     <head>
         <meta charset="utf-8">
@@ -9,6 +9,13 @@
     <?php
         require_once './navbar.php';
         require_once './footer.php';
+        include_once './env.php';
+        $sql = "SELECT * FROM products WHERE 1";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $products = $stmt->fetchAll();
+        var_dump($products);
+        echo $products['name'];
     ?>
     <h1 class="productstock">ProductStock</h1>
     <div class="table-container">

@@ -9,6 +9,7 @@
             <?php
                 require_once './navbar.php';
                 require_once './footer.php';
+                include './env.php';
             ?>
             <h1 class="productstock">ProductStock</h1>
             

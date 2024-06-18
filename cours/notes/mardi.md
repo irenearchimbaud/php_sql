@@ -36,3 +36,7 @@ WHERE condition1 AND condition2
 SELECT prenom
 FROM utilisateur
 WHERE prenom IN ('maurice', 'marie', 'timothée') // WHERE prenom = 'maurice' OR prenom = 'marie' OR prenom = 'timothée'
+
+Connexion a la base de données
+
+on utilise PDO pour établir une connexion à la base de données
