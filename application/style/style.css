@@ -149,3 +149,31 @@ footer a {
     margin: 5 10px;
     transition: color 0.3s;
 }
+
+/* STOCK */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--main-color-opacity);
+    color: var(--text-color);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid var(--second-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--main-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+tr:hover {
+    background-color: var(--main-hover);
+    color: var(--text-color);
+}
