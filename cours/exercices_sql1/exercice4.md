@@ -1,0 +1,1 @@
+SELECT * FROM `villes` WHERE code_postal BETWEEN 75000 AND 75020;

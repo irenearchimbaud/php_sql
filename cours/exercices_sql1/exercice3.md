@@ -1,0 +1,1 @@
+SELECT nom FROM `villes` WHERE population_2010 > 20000

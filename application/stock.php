@@ -11,26 +11,28 @@
         require_once './footer.php';
     ?>
     <h1 class="productstock">ProductStock</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Libellé</th>
-                <th>Prix à l'unité (€)</th>
-                <th>Stock</th>
-            </tr>
-        </thead>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Libellé</th>
+                    <th>Prix à l'unité (€)</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
 
-        <tbody>
-            <?php
-            foreach ($products as $product) {
-                echo "<tr>";
-                echo "<td> $product->name </td>";
-                echo "<td> $product->price </td>";
-                echo "<td> $product->stock </td>";
-                echo "</tr>";
-            }
-            ?>
-        </tbody>
-    </table>
+            <tbody>
+                <?php
+                foreach ($products as $product) {
+                    echo "<tr>";
+                    echo "<td> $product->name </td>";
+                    echo "<td> $product->price $ </td>";
+                    echo "<td> $product->stock </td>";
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
     </body>
 </html>

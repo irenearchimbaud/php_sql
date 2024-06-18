@@ -1,0 +1,1 @@
+SELECT * FROM `villes` WHERE densite_2010 > 1000 AND population_2010 < 20000;

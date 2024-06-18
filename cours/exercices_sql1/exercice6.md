@@ -1,0 +1,1 @@
+SELECT * FROM `villes` WHERE population_2010 BETWEEN 10000 AND 50000 AND departement = 75;
