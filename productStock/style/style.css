@@ -26,6 +26,7 @@ body {
 
 /* NAVBAR */
 nav {
+    align-items: center;
     background-color: var(--main-color);
     overflow: hidden;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -148,4 +149,35 @@ footer a {
     text-decoration: none;
     margin: 5 10px;
     transition: color 0.3s;
+}
+
+/* STOCK */
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: var(--main-hover);
+    color: var(--second-color);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid var(--main-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--main-color);
+    color: var(--second-color);
 }
