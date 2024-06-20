@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['authenticated'])) {
+    header('Location: connexion.php');
+    exit();
+}
+
 include_once './env.php';
 if (isset($_GET['id'])) {
     $product_id = htmlspecialchars($_GET['id']);

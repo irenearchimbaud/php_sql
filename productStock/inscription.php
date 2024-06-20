@@ -19,7 +19,7 @@
                     <label for="password">Mot de passe:</label>
                     <input type="password" id="password" name="password" />
                     <label for="password">Confirmer le mot de passe:</label>
-                    <input type="password" id="password" name="password" />
+                    <input type="password" id="confirmPassword" name="confirmPassword" />
                     <div class="form-button-div">
                         <input type="submit" value="Inscription" />
                     </div>

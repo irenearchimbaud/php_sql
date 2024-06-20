@@ -1,4 +1,11 @@
-<!-- <?php include './products/Product.php' ?> -->
+<?php
+session_start();
+
+if (!isset($_SESSION['authenticated'])) {
+    header('Location: connexion.php');
+    exit();
+}
+?>
 <html lang="fr">
     <head>
         <meta charset="utf-8">
