@@ -1,5 +1,5 @@
 <?php
-    $host = $_ENV["LOCALHOST"];
+    $host = 'localhost';
     $db   = 'productStock';
     $user = 'root';
     $pass = '';
