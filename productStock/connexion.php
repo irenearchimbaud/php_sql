@@ -6,12 +6,7 @@
         </head>
         <body>
             <h1 class="productstock">ProductStock</h1>
-            <?php
-                $moi = getenv('USER2');
-                echo $moi;
-            ?>
             <div class="connexion-form-page">
-                <h1><?php echo $moi; ?></h1>
             <h1>Connexion</h1>
                 <form action="connexion_post.php" method="POST">
                     <label for="username">Identifiant:</label>
