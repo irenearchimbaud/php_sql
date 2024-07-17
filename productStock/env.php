@@ -1,8 +1,8 @@
 <?php
     $host = 'localhost';
-    $db   = 'productStock';
-    $user = 'admin';
-    $pass = '';
+    $db   = getenv('DB2');
+    $user = getenv('USER2');
+    $pass = getenv('PASSWORD2');
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
