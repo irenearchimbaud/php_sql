@@ -11,6 +11,9 @@ CREATE TABLE stagiaire (
     email VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE products ( id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, price int NOT NULL, stock int NOT NULL, description TEXT NOT NULL);
+CREATE TABLE users ( id INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, confirmPassword VARCHAR(255) NOT NULL, username VARCHAR(255) NOT NULL);
+
 3/
 INSERT INTO stagiaire (nom, prenom, date_naissance, email)
 VALUES 

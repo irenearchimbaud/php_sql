@@ -1,8 +1,8 @@
 <?php
-    $host = 'localhost';
+    $host = '144.24.206.44';
     $db   = 'productStock';
-    $user = 'admin';
-    $pass = '';
+    $user = 'irene';
+    $pass = 'irene123';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

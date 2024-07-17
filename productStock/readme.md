@@ -33,3 +33,6 @@ Cliquez sur "Next" jusqu'a ce que l'installation débute:
 Une fois l'installation de Xampp terminée, nous pouvons passer à la mise en place du projet en local.
 
 Pour ce faire, il faut télécharger le fichier zipp du projet depuis le dépot gitHub
+
+
+Qu'est ce qu'un vhost? (a expliquer dans le readme md)
