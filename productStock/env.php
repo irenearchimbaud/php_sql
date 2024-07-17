@@ -1,8 +1,8 @@
 <?php
     $host = 'localhost';
-    $db   = getenv('DB2');
-    $user = getenv('USER2') ? getenv('USER2') : "root";
-    $pass = getenv('PASSWORD2') ? getenv('PASSWORD2') : "Azerty123";
+    $db   = 'productStock';
+    $user = getenv('USER2');
+    $pass = getenv('PASSWORD2');
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -17,5 +17,3 @@
     } catch (\PDOException $e) {
         throw new \PDOException($e->getMessage(), (int)$e->getCode());
     }
-
-?>
