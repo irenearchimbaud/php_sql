@@ -1,5 +1,5 @@
 <?php
-    $host = '144.24.206.44';
+    $host = "144.24.206.44";
     $db   = getenv('DB2');
     $user = getenv('USER2');
     $pass = getenv('PASSWORD2');
