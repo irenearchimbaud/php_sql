@@ -6,13 +6,12 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['confirm
     $password = htmlspecialchars($_POST['password']);
     $confirmPassword = htmlspecialchars($_POST['confirmPassword']);
     $username = htmlspecialchars($_POST['username']);
-    $id = '';
 
     if($password === $confirmPassword) {
         $password = password_hash($_POST['confirmPassword'], PASSWORD_DEFAULT);
-        $sql = 'INSERT INTO users (`id`, `email`, `password`, `username`) VALUES (:id, :email, :password, :username)';
+        $sql = 'INSERT INTO users (`email`, `password`, `username`) VALUES (:email, :password, :username)';
         $stmt = $pdo->prepare($sql);
-        $stmt->execute(['id' => $id, 'email' => $email, 'password' => $password, 'username' => $username]);
+        $stmt->execute(['email' => $email, 'password' => $password, 'username' => $username]);
 
         echo "Inscription réussie";
         header('Location: connexion.php');
