@@ -5,11 +5,10 @@
         $price = htmlspecialchars($_POST['price']);
         $stock = htmlspecialchars($_POST['stock']);
         $description = htmlspecialchars($_POST['description']);
-        $id = '';
     
-            $sql = "INSERT INTO `products`(`id`, `name`, `price`, `stock`, `description`) VALUES (:id, :name, :price, :stock, :description)";
+            $sql = "INSERT INTO `products`(`name`, `price`, `stock`, `description`) VALUES (:name, :price, :stock, :description)";
             $stmt = $pdo->prepare($sql);
-            $stmt->execute(['id' => $id, 'name' => $name, 'price' => $price, 'stock' => $stock, 'description' => $description]);
+            $stmt->execute(['name' => $name, 'price' => $price, 'stock' => $stock, 'description' => $description]);
             $product = $stmt->fetchAll();
     
             header('Location: stock.php');

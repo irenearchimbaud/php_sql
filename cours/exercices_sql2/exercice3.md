@@ -6,6 +6,7 @@ ALTER TABLE stagiaire ADD UNIQUE (email);
 
 3/
 ALTER TABLE stagiaire ADD adresse VARCHAR(255) AFTER prenom;
+ALTER TABLE users ADD email VARCHAR(255);
 
 4/
 ALTER TABLE stagiaire DROP adresse;
