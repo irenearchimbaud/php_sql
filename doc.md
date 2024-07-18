@@ -2,8 +2,7 @@
 
 Voici les étapes que j'ai réalisé afin de déployer mon application sur Oracle Cloud
 
-Mon projet est accessible via [144.](http://144.24.206.44/php_sql/productStock/connexion.php)
-
+Mon projet est accessible via http://144.24.206.44/php_sql/productStock/inscription.php
 ### Prérequis
 
 - Avoir crée au préalable un compte [Oracle Cloud](https://cloud.oracle.com/)
