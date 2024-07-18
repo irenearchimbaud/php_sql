@@ -6,6 +6,15 @@ ProductStock est une application WEB de gestion des stocks de produits. L'applic
 
 L'interface promet également à l'avenir une visualisation en direct des statistiques de vente ainsi que des stocks pour que l'accessibilité des données soient visibles et plus accessible via une interface WEB facile d'utilisation et simple.
 
+## Structure:
+
+- `cours:` Les prises de notes pendant les cours, et les exercices réalisés
+- `evaluations:` Les réponses des évaluations effectuées
+- `images:` Les images utilisées au sein du projet
+- `productStock:` Le dossier dans lequel se trouve le code de mon application WEB <b>ProductStock</b>
+- `doc.md:` La documentation liée a la mise en production d'une application WEB grace à Oracle et apache, GIT, ainsi que les détails de la procédure de ma mise en production
+- `README.md:` La documentation pour lancer le projet en local, et le détail de la structure de mon projet 
+
 # Comment lancer l'application ?
 
 ## Prérequis
