@@ -143,31 +143,31 @@ On utilise aussi htmlspecialchars lors de la récupération des données ce qui 
 
 La page de connexion présente un formulaire pour entrer son username et son mot de passe. Lors de la soumission, plusieurs vérifications sont faites.
 
-![accueil phpMyAdmin](./images/connexion.png)
+![connexion](./images/connexion.png)
 
 ## Page d'inscription
 
 La page d'inscription permet d'inscrire un nouvel utilisateur a l'application, pour lui permettre d'acceder aux stocks du laboratoire.
 
-![accueil phpMyAdmin](./images/inscription.png)
+![inscription](./images/inscription.png)
 
 ## Page des stocks
 
 Sur la page des stocks, est représentée une liste des produits avec possibilité d'en ajouter de nouveaux, d'en modifier et meme d'en sopprimer.
 
-![accueil phpMyAdmin](./images/stock.png)
+![stock](./images/stock.png)
 
 ## A propos
 
 Page a propos de l'application `productStock`
 
-![accueil phpMyAdmin](./images/about.png)
+![a propos](./images/about.png)
 
 ## Accueil
 
 Page d'accueil avec possibilité a l'avenir de consulter en direct les statistiques des stocks et des ventes de l'entreprise
 
-![accueil phpMyAdmin](./images/accueil.png)
+![accueil](./images/accueil.png)
 
 # Conclusion
 
