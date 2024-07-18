@@ -1,5 +1,7 @@
 # Description de ProductStock
 
+le dépot GIT de productStock est le suivant: https://github.com/irenearchimbaud/php_sql
+
 ProductStock est une application WEB de gestion des stocks de produits. L'application permet la gestion des stocks, la mise a jour de ceux-ci, leur suppression ainsi que l'ajout de nouveaux produits pouur la vente.
 
 L'interface promet également à l'avenir une visualisation en direct des statistiques de vente ainsi que des stocks pour que l'accessibilité des données soient visibles et plus accessible via une interface WEB facile d'utilisation et simple.
