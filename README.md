@@ -16,17 +16,17 @@ https://www.apachefriends.org/fr/
 
 Et de télécharger le lien adéquat en fonction de votre OS.
 
-![télécharger xampp](../images/telecharger-xampp.png)
+![télécharger xampp](./images/telecharger-xampp.png)
 
 Cliquez ensuite sur le fichier .exe ou sur le telechargement pour démarrer l'installation.
 
 Cette popup devrait s'afficher:
 
-![télécharger xampp](../images/installer-xampp1.png)
+![télécharger xampp](./images/installer-xampp1.png)
 
 Cliquez sur "Next" jusqu'a ce que l'installation débute:
 
-![télécharger xampp](../images/installation-xamp2.png)
+![télécharger xampp](./images/installation-xamp2.png)
 
 ## Mise en place du projet:
 
@@ -34,23 +34,23 @@ Une fois l'installation de Xampp terminée, nous pouvons passer à la mise en pl
 
 Pour ce faire, il faut télécharger le fichier zipp du projet depuis le dépot gitHub
 
-![télécharger projet](../images/telecharger-projet.png)
+![télécharger projet](./images/telecharger-projet.png)
 
 Une fois téléchargé, extrayez le dossier dans `C:\xampp\htdocs`. (Dans le dossier htdocs de xampp)
 
-![extraction projet étape 1](../images/telecharger-projet2.png)
+![extraction projet étape 1](./images/telecharger-projet2.png)
 
 ### Base de données MariaDB
 
 Pour mettre en place la base de données, démarrez Apache et MySQL depuis XAMPP :
 
-![démarrer MySQL et Apache](../images/mariadb.png)
+![démarrer MySQL et Apache](./images/mariadb.png)
 
 Il est maintenant possible d'accéder à PHPMyAdmin pour accéder aux bases de données depuis le navigateur web avec l'adresse [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/)
 
 Pour créer la base de données, cliquez sur "Nouvelle base de données", donnez-lui un nom, dans notre cas `productStock`, puis cliquez sur "Créer".
 
-![créer base de données](../images/mariadb2.png)
+![créer base de données](./images/mariadb2.png)
 
 ### Création des tables
 
@@ -58,7 +58,7 @@ Pour que la base de données corresponde aux requêtes effectuées dans le proje
 
 Pour ce faire, nous allons cliquer sur la base de données que l'on vient de créer: `productStock`, puis on va se rendre dans l'onglet SQL en haut.
 
-![accueil phpMyAdmin](../images/mariadb3.png)
+![accueil phpMyAdmin](./images/mariadb3.png)
 
 Entrez les requêtes SQL suivantes puis exécutez-les :
 
@@ -68,7 +68,7 @@ CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(255) NOT
 CREATE TABLE products (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, price int NOT NULL, stock int NOT NULL, description VARCHAR(255) NOT NULL);
 ```
 
-![accueil phpMyAdmin](../images/mariadb4.png)
+![accueil phpMyAdmin](./images/mariadb4.png)
 
 ## Structure de la base de données
 
@@ -101,6 +101,18 @@ if($password === $confirmPassword) {
 
 Dans ce code, j'envoie les données en base de données uniquement SI le mot de passe correspond à la saisie de l'input de confirmation de mot de passe.
 
+# Lancement en local
+
+pour que le projet soit fonctionnel en local, il est nécéssaire de modifier le PDO dans le fichier `env.php`.
+
+Il faudra modifier les variables `$user` et `$pass` comme effectué ci dessous:
+
+```php
+    $user = "root";
+    $pass = "";
+```
+
+
 # Injection SQL
 
 Pour éviter le risque d'injection SQL, PDO utilise les requêtes préparées via la fonction prepare().
@@ -131,21 +143,31 @@ On utilise aussi htmlspecialchars lors de la récupération des données ce qui 
 
 La page de connexion présente un formulaire pour entrer son username et son mot de passe. Lors de la soumission, plusieurs vérifications sont faites.
 
+![accueil phpMyAdmin](./images/connexion.png)
+
 ## Page d'inscription
 
 La page d'inscription permet d'inscrire un nouvel utilisateur a l'application, pour lui permettre d'acceder aux stocks du laboratoire.
+
+![accueil phpMyAdmin](./images/inscription.png)
 
 ## Page des stocks
 
 Sur la page des stocks, est représentée une liste des produits avec possibilité d'en ajouter de nouveaux, d'en modifier et meme d'en sopprimer.
 
+![accueil phpMyAdmin](./images/stock.png)
+
 ## A propos
 
 Page a propos de l'application `productStock`
 
+![accueil phpMyAdmin](./images/about.png)
+
 ## Accueil
 
 Page d'accueil avec possibilité a l'avenir de consulter en direct les statistiques des stocks et des ventes de l'entreprise
+
+![accueil phpMyAdmin](./images/accueil.png)
 
 # Conclusion
 

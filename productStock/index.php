@@ -20,6 +20,7 @@ if (!isset($_SESSION['authenticated'])) {
             include './env.php';
         ?>
         <h1 class="productstock">ProductStock</h1>
+        <p>a venir...</p>
         
     </body>
 </html>
